@@ -38,8 +38,8 @@ eureka:
     lease-expiration-duration-in-seconds: 10
 
 ribbon:
-  ConnectTimeout: 4000 # 连接超时时间(ms)
-  ReadTimeout: 4000 # 通信超时时间(ms)
+  ConnectTimeout: 40000 # 连接超时时间(ms)
+  ReadTimeout: 40000 # 通信超时时间(ms)
   OkToRetryOnAllOperations: true # 是否对所有操作重试
   MaxAutoRetriesNextServer: 1 # 同一服务不同实例的重试次数
   MaxAutoRetries: 1 # 同一实例的重试次数
