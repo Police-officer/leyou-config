@@ -46,7 +46,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMillisecond: 10000 # 熔断超时时长：10000ms
+            timeoutInMillisecond: 50000 # 熔断超时时长：50000ms
 leyou:
   jwt:
     cookieName: LY_TOKEN
