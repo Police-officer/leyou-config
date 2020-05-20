@@ -10,12 +10,12 @@ spring:
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10
-  rabbitmq:
-    host: 127.0.0.1
-  data:
-    mongodb:
-      host: localhost
-      database: spitdb
+#  rabbitmq:
+#    host: 127.0.0.1
+#  data:
+#    mongodb:
+#      host: localhost
+#      database: spitdb
 eureka:
   client:
     service-url:
