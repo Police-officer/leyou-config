@@ -4,23 +4,23 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:mysql://192.168.1.107:3306/leyou?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/leyou?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
     username: root
-    password: BobMySQL666
+    password: 123456
     hikari:
       maximum-pool-size: 200
       minimum-idle: 100
-  rabbitmq:
-    host: 127.0.0.1
-    username: juzhang
-    password: 123456
-    virtual-host: /leyou
-    template:
-      queue: leyou.order.delay.queue
-    publisher-confirms: true
-  redis:
-    host: 192.168.1.118
-    port: 6379
+#  rabbitmq:
+#    host: 127.0.0.1
+#    username: juzhang
+#    password: 123456
+#    virtual-host: /leyou
+#    template:
+#      queue: leyou.order.delay.queue
+#    publisher-confirms: true
+#  redis:
+#    host: 192.168.1.118
+#    port: 6379
 eureka:
   client:
     service-url:

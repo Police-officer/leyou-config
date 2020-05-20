@@ -3,14 +3,14 @@ server:
 spring:
   application:
     name: cart-service
-  redis:
-    host: 192.168.1.118
-    port: 6379
-  rabbitmq:
-    virtual-host: /leyou
-    username: juzhang
-    password: 123456
-    host: 127.0.0.1
+#  redis:
+#    host: 192.168.1.118
+#    port: 6379
+#  rabbitmq:
+#    virtual-host: /leyou
+#    username: juzhang
+#    password: 123456
+#    host: 127.0.0.1
 eureka:
   client:
     service-url:

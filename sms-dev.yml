@@ -3,11 +3,11 @@ server:
 spring:
   application:
     name: sms-service
-  rabbitmq:
-    virtual-host: /leyou
-    username: juzhang
-    password: 123456
-    host: 127.0.0.1
+#  rabbitmq:
+#    virtual-host: /leyou
+#    username: juzhang
+#    password: 123456
+#    host: 127.0.0.1
 
 leyou:
   sms:

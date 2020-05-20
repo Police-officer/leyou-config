@@ -5,29 +5,29 @@ server:
 spring:
   application:
     name: seckill-service
-  data:
-    elasticsearch:
-      cluster-name: elasticsearch
-      cluster-nodes: 127.0.0.1:9300
+#  data:
+#    elasticsearch:
+#      cluster-name: elasticsearch
+#      cluster-nodes: 127.0.0.1:9300
   datasource:
-    url: jdbc:mysql://192.168.1.107:3306/leyou?characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/leyou?characterEncoding=UTF-8&useSSL=false
     username: root
-    password: BobMySQL666
+    password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10
-  rabbitmq:
-    virtual-host: /leyou
-    username: juzhang
-    password: 123456
-    host: 127.0.0.1
-    template:
-      exchange: leyou.order.exchange
-    publisher-confirms: true
-  redis:
-    host: 192.168.1.118
-    port: 6379
+#  rabbitmq:
+#    virtual-host: /leyou
+#    username: juzhang
+#    password: 123456
+#    host: 127.0.0.1
+#    template:
+#      exchange: leyou.order.exchange
+#    publisher-confirms: true
+#  redis:
+#    host: 192.168.1.118
+#    port: 6379
   jackson:
     default-property-inclusion: non_null # 配置json处理时忽略空值
   resources:
