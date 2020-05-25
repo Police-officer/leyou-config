@@ -10,14 +10,14 @@ spring:
     hikari:
       maximum-pool-size: 200
       minimum-idle: 100
-#  rabbitmq:
-#    host: 127.0.0.1
-#    username: juzhang
-#    password: 123456
-#    virtual-host: /leyou
-#    template:
-#      queue: leyou.order.delay.queue
-#    publisher-confirms: true
+  rabbitmq:
+    host: 192.168.0.12
+    username: leyou
+    password: 123456
+    virtual-host: /leyou
+    template:
+      queue: leyou.order.delay.queue
+    publisher-confirms: true
 #  redis:
 #    host: 192.168.1.118
 #    port: 6379

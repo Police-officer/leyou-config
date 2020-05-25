@@ -12,18 +12,18 @@ spring:
       minimum-idle: 10
 #  redis:
 #    host: 192.168.1.118
-#  rabbitmq:
-#    host: 127.0.0.1
-#    username: juzhang
-#    password: 123456
-#    virtual-host: /leyou
-#    template:
-#      retry:
-#        enabled: true
-#        max-interval: 210000ms
-#        initial-interval: 10000ms
-#        multiplier: 2
-#    publisher-confirms: true
+  rabbitmq:
+    host: 192.168.0.12
+    username: leyou
+    password: 123456
+    virtual-host: /leyou
+    template:
+      retry:
+        enabled: true
+        max-interval: 210000ms
+        initial-interval: 10000ms
+        multiplier: 2
+    publisher-confirms: true
 eureka:
   client:
     service-url:

@@ -16,11 +16,11 @@ spring:
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10
-#  rabbitmq:
-#    virtual-host: /leyou
-#    username: juzhang
-#    password: 123456
-#    host: 127.0.0.1
+  rabbitmq:
+    virtual-host: /leyou
+    username: leyou
+    password: 123456
+    host: 192.168.0.12
 #  redis:
 #    host: 192.168.1.118
 #    port: 6379
