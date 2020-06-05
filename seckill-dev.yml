@@ -5,10 +5,10 @@ server:
 spring:
   application:
     name: seckill-service
-#  data:
-#    elasticsearch:
-#      cluster-name: elasticsearch
-#      cluster-nodes: 127.0.0.1:9300
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.0.12:9300
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/leyou?serverTimezone=GMT%2B8&amp&characterEncoding=UTF-8&useSSL=false
@@ -25,9 +25,9 @@ spring:
     template:
       exchange: leyou.order.exchange
     publisher-confirms: true
-#  redis:
-#    host: 192.168.1.118
-#    port: 6379
+  redis:
+    host: 192.168.0.12
+    port: 6379
   jackson:
     default-property-inclusion: non_null # 配置json处理时忽略空值
   resources:

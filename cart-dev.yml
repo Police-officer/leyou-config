@@ -3,9 +3,9 @@ server:
 spring:
   application:
     name: cart-service
-#  redis:
-#    host: 192.168.1.118
-#    port: 6379
+  redis:
+    host: 192.168.0.12
+    port: 6379
   rabbitmq:
     virtual-host: /leyou
     username: leyou

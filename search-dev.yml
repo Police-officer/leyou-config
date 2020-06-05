@@ -3,10 +3,10 @@ server:
 spring:
   application:
     name: search-service
-#  data:
-#    elasticsearch:
-#      cluster-name: elasticsearch
-#      cluster-nodes: 127.0.0.1:9300
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.0.12:9300
   rabbitmq:
     virtual-host: /leyou
     username: leyou
